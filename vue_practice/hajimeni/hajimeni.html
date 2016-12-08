@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hajimeni</title>
+    <script src="./vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="message">
+      {{ message }}
+      <button v-on:click="reverseMessage">Reverse Message</button>
+
+      <p v-if="seen">hogehoge</p>
+
+      <ol>
+        <li v-for="todo in todos">{{todo.text}}</li>
+      </ol>
+
+
+    </div>
+    <script src="./hajimeni.js" charset="utf-8"></script>
+  </body>
+</html>
