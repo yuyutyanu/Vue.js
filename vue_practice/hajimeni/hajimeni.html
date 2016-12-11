@@ -15,8 +15,7 @@
       <ol>
         <li v-for="todo in todos">{{todo.text}}</li>
       </ol>
-
-
+       <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
     </div>
     <script src="./hajimeni.js" charset="utf-8"></script>
   </body>
