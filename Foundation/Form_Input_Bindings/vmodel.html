@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>v-model</title>
+    <script src="../vue.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="checkbox" v-model="toggle" value="hogehoge">
+      {{toggle}}
+      <input type="radio" v-model="toggle" value="hogehoge">
+      {{toggle}}
+
+    <select v-model="selected">
+      <option value="abc">ABC</option>
+      <option value="def">DEF</option>
+    </select>
+    {{selected}}
+
+    <input
+    type="checkbox"
+    v-model="toggle"
+    v-bind:true-value="a"
+    v-bind:false-value="b"
+    >
+
+    <select v-model="message">
+      <option v-bind:value="{number:123}">123</option>
+    </select>
+    
+  </div>
+    <script src="./vmodel.js" charset="utf-8"></script>
+  </body>
+</html>
