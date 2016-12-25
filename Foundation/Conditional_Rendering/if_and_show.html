@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>v-if v-show</title>
+        <script src="../vue.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p v-if="false">ok</p>
+            <p v-else>no</p>
+
+            <template v-if="false">
+                <p>hogehoge</p>
+                <p>piyopiyo</p>
+                <p>hugahuga</p>
+            </template>
+
+            <div v-if="false">
+              hoge
+            </div>
+            <div v-else-if="true">
+              piyo
+            </div>
+            <div v-else-if="true">
+              huga
+            </div>
+          <p v-show="false">
+            aaaa
+          </p>
+        </div>
+        <script src="./if_and_show.js" charset="utf-8"></script>
+    </body>
+</html>
